@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Fragment_principal_novedad">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/appbartabsnovedad"
+            android:layout_width="match_parent"
+            style="@style/MyCustomTabLayout"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpagertabnovedad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Registro_Invitado">
+
+    <TextView
+        android:text="Registre nuevo usuario"
+        android:padding="10dp"
+        android:id="@+id/txt1"
+        android:textColor="@color/colorAccent"
+        android:background="@color/gris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+       <LinearLayout
+
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_dni"
+            android:background="@drawable/editex_circular"
+            android:hint="Ingrese DNI"
+            android:layout_margin="8dp"
+            android:maxLength="8"
+            android:paddingLeft="@dimen/pading_left_caja"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:hint="Ingrese Nombre"
+            android:maxLength="8"
+            android:paddingLeft="@dimen/pading_left_caja"
+            android:background="@drawable/editex_circular"
+            android:layout_margin="8dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+       </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/adduser"
+        app:borderWidth="0dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Salida_novedad">
+
+    <TableRow
+        android:id="@+id/Cabecera"
+        android:background="@color/azuloscuro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ColumnaAnio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5px"
+            android:text="NOVEDAD"
+            android:textColor="@color/blanco"
+            />
+
+        <TextView
+            android:id="@+id/ColumnaCiudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5px"
+            android:text="DETALLE"
+            android:textColor="@color/blanco"
+            />
+
+        <TextView
+            android:id="@+id/ColumnaOro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5px"
+            android:text="ACCION"
+            android:textColor="@color/blanco"
+            />
+
+    </TableRow>
+
+</FrameLayout>

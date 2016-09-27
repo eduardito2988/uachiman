@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Doorman</string>
+    <string name="bluetooth_available_no">Bluetooth no se encuentra disponible en el dispositivo</string>
+    <string name="bluetooth_connect_unable">Bluetooth no se puede conectar</string>
+    <string name="bluetooth_listen">Bluetooth esta esperando una acción</string>
+    <string name="bluetooth_state_connecting">Bluetooth está realizando una conexión</string>
+    <string name="bluetooth_state_connected">Bluetooth tiene una conexión activa</string>
+    <string name="bluetooth_state_disconnecting">Bluetooth está finalizando una conexión</string>
+    <string name="bluetooth_state_disconnected">Bluetooth se ha desconectado</string>
+    <string name="bluetooth_open_successful">Bluetooth abrió con éxito</string>
+    <string name="bluetooth_state_on">Bluetooth está activo</string>
+    <string name="bluetooth_state_off">Bluetooth está apagado</string>
+    <string name="bluetooth_turning_on">Bluetooth está activándose</string>
+    <string name="bluetooth_turning_off">Bluetooth se está desactivando</string>
+    <string name="bluetooth_device_is_used">El dispositivo bluetooth esta siendo usado</string>
+    <string name="printer_dont_select">___________No selecciono el tipo de impresora__________</string>
+    <string name="plugin_working">PLUGIN esta operando</string>
+	<string name="plugin_working_result">resultado de PLUGIN esta operando </string>
+    <string name="with_the_device">con el dispositivo</string>
+    <string name="voucher_empty">Voucher sin datos</string>
+    <string name="successful">Satisfactorio</string>
+    <string name="please_click_back_again_to_exit">Por favor, haga clic ATRAS de nuevo para salir</string>
+    <!--  -->
+    <string name="name">Nombre</string>
+    <string name="dni">DNI</string>
+    <string name="company">Empresa</string>
+    <string name="entry_date">F. Ing.</string>
+    <string name="firm">Firma</string>
+    <string name="holder">Propietario</string>
+    <string name="personal">Personal</string>
+    <string name="user">Usuario</string>
+    <string name="delivery_date">F. Ent.</string>
+    <string name="charge">Encargo</string>
+    <string name="observations">Observacion(es)</string>
+    <string name="providers">Proveedor(es) S.P.</string>
+    <string name="work_be_done">Trabajo a realizar</string>
+    <string name="owner">Poseedor</string>
+    <string name="business_name">R. Soc.</string>
+    <string name="ruc">RUC</string>
+    <string name="operators">Operador(es)</string>
+    <string name="responsible">Respons.</string>
+    <string name="companions">Acompañante(s)</string>
+    <string name="doorman">Conserje</string>
+    <string name="policy">Poliza</string>
+    <string name="guests">Invitado(s).</string>
+    <string name="door">Pta.</string>
+    <!--  -->
+	<string name="on_resume">Esta volviendo a APP</string>
+	<string name="on_start">COMENZAR APP </string>
+	<string name="on_pause">Ah a sido pausado</string>
+	<string name="on_stop">Ah a sido detenido</string>
+	<string name="on_destroy">Ah a sido cerrado totalmente</string>
+	<!--  -->
+	<string name="delivery_voucher_title">Delivery al</string>
+	<string name="encargo_voucher_title">Encargo al</string>
+	<string name="profesional_voucher_title">Profesionales al</string>
+	<string name="proveedor_voucher_title">Proveedor al</string>
+	<string name="corretaje_voucher_title">Corretaje al</string>
+	<string name="remodelacion_voucher_title">Remodelación al</string>
+	<string name="invitado_voucher_title">Invitados al</string>
+
+
+    <string name="msg_encargo">LOS ENCARGOS  PUEDEN ESTAR PENDIENTE SOLO %d DIAS.</string>
+
+</resources>

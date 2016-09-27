@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#97233F</color>
+    <color name="colorPrimaryDark">#113C6D</color>
+    <color name="colorAccent">#97233F</color>
+    <color name="rojo_claro">#E3424A</color>
+    <color name="rojo_claro1">#F48FA2</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#ffffff</color>
+    <color name="gris">#F9F9F9</color>
+    <color name="lineaGris">#EEE</color>
+    <color name="lineaGris_Oscuro">#616161</color>
+    <color name="morado">#8E1F3D</color>
+    <color name="azuloscuro">#031E47</color>
+    <color name="verde_claro">#4CAF50</color>
+
+    <color name="naranja">#FF8F00</color>
+    <color name="celeste">#0091EA</color>
+    <color name="verde_oscuro">#006064</color>
+    <color name="azul">#3F51B5</color>
+    <color name="morado_oscuro">#673AB7</color>
+    <color name="fuxia">#FF1744</color>
+    <color name="fuxia_oscuro">#E91E63</color>
+
+    <color name="color_boton">#8E1F3D</color>
+    <color name="color_header">#222222</color>
+    <color name="colorToolbar">#F9902F</color>
+
+    <!--COLOR DREGADADO SNIPER-->
+    <color name="inicio_bsniper">#E1E1E1</color>
+    <color name="final_bsniper">#D2D2D2</color>
+    <color name="view_color">#E0E0E0</color>
+
+    <!--color textos-->
+    <color name="color_texto">#E1E1E1</color>
+    <color name="color_hint">#D2D2D2</color>
+
+    <!--fondos fragment-->
+  <color name="fondo_fragment">#F2F2F2</color>
+
+    <!--quinto-->
+    <color name="color_end">#993E56</color>
+
+
+
+
+</resources>

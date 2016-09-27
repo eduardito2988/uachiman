@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:thickness="0dp"
+    android:shape="rectangle">
+    <stroke android:width="1px"
+        android:color="#BDBDBD"/>
+    <corners android:radius="2dp" />
+    <gradient
+        android:startColor="#FFFFFF"
+        android:endColor="#FFFFFF"
+        android:type="linear"
+        android:angle="270"/>
+    <padding android:bottom="10px" android:right="6dp"/>
+</shape>
+    </item>
+    <item>
+    <bitmap android:gravity="right|bottom"  android:src="@drawable/esquina_combo2"  />
+    </item>
+
+</layer-list>

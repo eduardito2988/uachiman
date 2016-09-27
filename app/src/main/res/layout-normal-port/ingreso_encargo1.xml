@@ -1,0 +1,53 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Ingreso_encargo"
+    >
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/numero_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/buscador_depa"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:hint="@string/tex_gerencia"
+            style="@style/CusmerEditexborder"
+
+            />
+
+        <EditText
+            android:id="@+id/txtnombres"
+            style="@style/CusmerEditexborder"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_weight="3"
+            android:layout_marginLeft="2dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:hint="@string/hinttnumero"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/txtinformacion"
+            />
+
+
+</LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_residentes_encargo"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="568dp">
+            </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

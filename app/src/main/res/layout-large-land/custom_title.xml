@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_boton"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cloud_computing_dialogo"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textView1"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Dialog title"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todos"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:theme="@style/Checktodo"
+        android:id="@+id/Checktodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

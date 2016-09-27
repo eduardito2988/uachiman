@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Carview"
+    android:background="@color/blanco"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/fila_salida_encargo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/nom_invitado"
+            android:text="DELHEL DELHEL"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_raya"
+            android:layout_toEndOf="@+id/btn_raya" />
+
+        <TextView
+            android:id="@+id/dni_invitado"
+            android:layout_width="match_parent"
+            android:text="DETALLE"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/nom_invitado"
+            android:layout_toRightOf="@+id/btn_raya"
+            android:layout_toEndOf="@+id/btn_raya" />
+
+
+        <Button
+            android:textColor="@color/blanco"
+            android:background="@color/colorAccent"
+            android:layout_width="3dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_raya"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignBottom="@+id/dni_invitado" />
+
+        <Button
+            android:textColor="@color/blanco"
+            android:background="@drawable/grabar_blanco"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_opsiones"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/eliminar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/dni_invitado" />
+
+
+        <View
+            android:layout_below="@+id/btn_raya"
+            android:background="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

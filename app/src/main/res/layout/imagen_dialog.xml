@@ -1,0 +1,48 @@
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="300dp"
+        android:id="@+id/imagen_dialog"
+        android:src="@drawable/fondo_delhel"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:alpha="0.5"
+    android:background="@color/cardview_dark_background"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignTop="@+id/texto_dialog"
+    android:id="@+id/linearLayout"
+    android:layout_alignBottom="@+id/texto_dialog">
+
+
+</LinearLayout>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/texto_dialog"
+        android:paddingBottom="10dip"
+        android:paddingTop="7dip"
+        android:text="EDUARDO ROSALES"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/blanco"
+        android:textSize="18dip"
+        android:layout_alignBottom="@+id/imagen_dialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

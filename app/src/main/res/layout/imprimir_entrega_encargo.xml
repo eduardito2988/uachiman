@@ -1,0 +1,278 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:padding="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/nom_endida"
+            android:text="DELHEL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+         <TextView
+
+             android:textStyle="bold"
+             android:gravity="center"
+             android:textSize="40dp"
+             android:id="@+id/num_unidad"
+             android:text="21973"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+
+
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:padding="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:textStyle="bold"
+
+             android:textSize="14dp"
+             android:text="Puerta :"
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:gravity="center"
+             android:textSize="14dp"
+             android:text="Menriquez"
+             android:layout_weight="1"
+             android:id="@+id/nom_pruerta"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+
+     </LinearLayout>
+
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:textStyle="bold"
+                 android:textSize="14dp"
+                 android:text="Usuario :"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+             <TextView
+                 android:gravity="center"
+                 android:textSize="14dp"
+                 android:text="Jquinto"
+                 android:id="@+id/nom_endiad"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:textStyle="bold"
+                 android:textSize="14dp"
+                 android:text="Fecha Ingreso :"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+             <TextView
+                 android:gravity="center"
+                 android:textSize="14dp"
+                 android:id="@+id/fecha_ingreso"
+                 android:text="08-09-2016 08:27:55"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:textStyle="bold"
+                 android:textSize="14dp"
+                 android:text="Fecha Entrega :"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+             <TextView
+                 android:id="@+id/fecha_salida"
+                 android:gravity="center"
+                 android:textSize="14dp"
+                 android:text="10-09-2016 08:27:55"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:textStyle="bold"
+                 android:textSize="14dp"
+                 android:text="Tipo de Encargo :"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+             <TextView
+                 android:gravity="center"
+                 android:textSize="14dp"
+                 android:text="Paquete"
+                 android:id="@+id/tipo_entrega"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:textStyle="bold"
+                 android:textSize="14dp"
+                 android:text="Observación :"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/detale_encargos"
+             android:gravity="left"
+             android:textSize="14dp"
+             android:lines="2"
+             android:layout_marginLeft="10dp"
+             android:text="Paquete ingresado en caja por el sr. rosalesad encargados de los servicios del "
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+             <TextView
+                 android:text="NOMBRE Y FIRMA :"
+                 android:textStyle="bold"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:padding="5dp"
+             android:layout_marginTop="50dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <View
+                 android:background="@color/lineaGris"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"></View>
+
+
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_imprimir_encargo"
+            android:text="@string/imprimir"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            style="@style/Estilo_boton_rojo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/btn_cancelar_imprecion"
+            android:text="@string/cancelar_encargo"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            style="@style/Estilo_boton_rojo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

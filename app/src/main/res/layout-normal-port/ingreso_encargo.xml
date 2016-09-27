@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Ingreso_encargo"
+    >
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/numero_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/buscador_depa"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:hint="@string/tex_gerencia"
+            style="@style/CusmerEditexborder"
+
+            />
+
+        <EditText
+            android:id="@+id/txtnombres"
+            style="@style/CusmerEditexborder"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_weight="4"
+            android:layout_marginLeft="2dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:hint="@string/hinttnumero"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/txtinformacion"
+            />
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spiner_encargo"
+        style="@style/spinner_style"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/txt_informe"
+        style="@style/CusmerEditexborder"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_marginTop="10dp"
+        android:hint="@string/text_detalle_encargo"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/txtinformacion"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_registrar_encargo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_encargo"
+        android:textColor="@color/blanco"
+        android:layout_below="@+id/txt_informe"
+        style="@style/Estilo_boton_rojo"
+        />
+
+
+
+</LinearLayout>

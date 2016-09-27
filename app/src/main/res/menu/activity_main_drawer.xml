@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item android:title="AVISOS" >
+
+            <item android:id="@+id/principal_penel"
+                android:title="Menu principal"
+                android:icon="@drawable/residente">
+            </item>
+            <item android:id="@+id/aviso"
+                android:icon="@drawable/mensaje"
+                android:title="Mensajes"
+                app:actionLayout="@layout/ui_menu">
+            </item>
+            <menu>
+                <item android:id="@+id/nav_encargo"
+                    android:icon="@drawable/lista"
+                    android:title="Encargos"
+                    app:actionLayout="@layout/ui_menu">
+
+                </item>
+                <item android:id="@+id/nav_invitado"
+                    android:icon="@drawable/invitados"
+                    android:title="Invitados"
+                    app:actionLayout="@layout/ui_menu">
+                </item>
+                <item android:id="@+id/nav_profesion"
+                    android:icon="@drawable/profesional"
+                    android:title="@string/Operario"
+                    app:actionLayout="@layout/ui_menu">
+                </item>
+                <item android:id="@+id/nav_delivery"
+                    android:icon="@drawable/reloj_delivery"
+                    android:title="Delivery"
+                    app:actionLayout="@layout/ui_menu">
+                </item>
+                <item android:id="@+id/nav_dni"
+                    android:icon="@drawable/dni"
+                    android:title="DNI"
+                    app:actionLayout="@layout/ui_menu">
+                </item>
+            </menu>
+        </item>
+    </group>
+
+
+
+</menu>

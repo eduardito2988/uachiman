@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Carview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/fila_salida_encargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/con_foto"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/avatar_roy"
+                android:scaleType="centerInside"
+                android:layout_height="50dp"
+                android:id="@+id/foto_residente" />
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/con_foto"
+        android:layout_toEndOf="@+id/con_foto">
+
+        <TextView
+            android:id="@+id/nom_residente"
+            android:layout_width="match_parent"
+            android:text="GAVILANO FIORELLA"
+            android:textColor="@color/color_header"
+            android:textSize="12dp"
+            android:textStyle="bold|normal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/dni"
+            android:layout_width="wrap_content"
+            android:textColor="@color/morado"
+            android:text="45668686"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nom_residente"
+            android:layout_alignLeft="@+id/nom_residente"
+            android:layout_alignStart="@+id/nom_residente" />
+
+    </RelativeLayout>
+
+        <Button
+            android:background="@color/colorAccent"
+            android:layout_width="70dp"
+            android:text="Asistencia"
+            android:textColor="@color/blanco"
+            android:layout_height="25dp"
+            android:textSize="10dp"
+            android:id="@+id/btn_asistensia"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/con_foto"
+        android:background="@color/view_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+
+</LinearLayout>

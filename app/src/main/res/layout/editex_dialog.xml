@@ -1,0 +1,42 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/label_text"
+             android:text="Ingrese Datos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <EditText
+         android:id="@+id/caja_dialog"
+             android:layout_margin="10dp"
+        style="@style/CusmerEditexborder" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_relevo"
+            android:text="Aceptar"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            style="@style/Estilo_boton_rojo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

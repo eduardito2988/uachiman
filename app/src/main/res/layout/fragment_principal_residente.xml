@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/fondo_fragment"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Fragment_principal_residente">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <RadioGroup
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+             <RadioButton
+                 android:text="CASA / LOTE"
+                 android:id="@+id/check_num_unid"
+                 android:padding="5dp"
+                 android:checked="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+             <RadioButton
+                 android:id="@+id/check_buscar_dni"
+                 android:text="NRO.DNI"
+                 android:padding="5dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+         </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_buscar_personal"
+            android:layout_width="wrap_content"
+            android:text="Buscar "
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplet_unidad"
+            style="@style/CusmerEditexborder"
+            android:hint="INGRESE NRO DEPARTAMENTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:visibility="gone"
+            style="@style/CusmerEditexborder"
+            android:hint="INGRESE NRO DNI"
+            android:maxLength="8"
+            android:inputType="number"
+            android:id="@+id/buscar_dni_residente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/snip"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_residente"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="568dp">
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">Doorman</string>
+
+    <string name="navigation_drawer_open">Abrir Navegaciòn</string>
+    <string name="navigation_drawer_close">Cerrar Navegaciòn</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="relevo">Relevo</string>
+    <string name="novedad">Novedad</string>
+    <string name="invitado">Invitado</string>
+    <string name="Operario">Operario</string>
+    <string name="telefono_util">Telefono UTIL</string>
+    <string name="Residente">Residente</string>
+    <string name="encargo">Encargo</string>
+    <string name="Profesional">Profesional</string>
+    <string name="delivery">Delivery</string>
+    <string name="trabajador">Trabajador</string>
+    <string name="perosonal">Personal</string>
+    <string name="corredor">Corredor</string>
+
+    <string name="relevo1">RELEVO</string>
+    <string name="novedad1">NOVEDAD</string>
+    <string name="invitado1">INVITADO</string>
+    <string name="Operario1">OPERARIO</string>
+    <string name="telefono_util1">TELÈFONO UTIL</string>
+    <string name="Residente1">RESIDENTE</string>
+    <string name="encargo1">ENCARGO</string>
+    <string name="Profesional1">PROFESIONAL</string>
+    <string name="delivery1">DELIVERY</string>
+    <string name="trabajador1">TRABAJADOR</string>
+    <string name="perosonal1">PERSONAL</string>
+    <string name="corredores1">CORREDOR</string>
+    <string name="ayuda1">AYUDA</string>
+
+
+    <!--PLACEHOLDER-->
+
+    <string name="placeholder_buscar_usuario">INGRESE DNI</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Ingrese Email</string>
+    <string name="prompt_password">Ingrese Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_ubicanos">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- texto botones-->
+    <string name="guardar">Guardar</string>
+    <string name="grabar">Grabar</string>
+    <string name="Agregar">Agregar</string>
+    <string name="Registrar">Registar </string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nuevo_user">Nuevo usuario</string>
+    <string name="Mas_info">Màs Informaciòn</string>
+    <string name="Salir">Salir</string>
+    <string name="Eliminar">Eliminar</string>
+
+
+    <!--hint-->
+    <string name="ingrese_novedad">Ingrese Novedad</string>
+    <string name="ingrese_usuario">Ingrese Usuario</string>
+    <string name="ingrese_pass">Ingrese Contraseña</string>
+    <string name="ingrese_dni">Ingrese DNI</string>
+    <string name="ingrese_nombre_apellido">Ingrese Nombre y Apellido</string>
+
+
+    <!--FRAGMENTE DELIVERY-->
+    <string name="hint_ingrese_ruc">RUC</string>
+    <string name="hint_ingrese_empresa">Empresa</string>
+    <string name="hint_ingrese_observacion">Observaciòn</string>
+    <!--texview-->
+    <string name="tex_gerencia">#Casa/Lot / Apellido </string>
+    <string name="tex_requiere_dni">SE REQUIERE DEJAR DNI HASTA SU SALIDA.</string>
+    <string name="tex_datos_empresa">Datos de Empresa:</string>
+    <string name="tex_seleccione_repartidor">Seleccione Repartidor:</string>
+    <!--boton-->
+    <string name="registrar_delivery">Registar Delivery</string>
+    <string name="registrar_repartidor">Registar Repartidor</string>
+    <string name="imprimir">Imprimir</string>
+    <string name="cancelar_encargo">Cancelar</string>
+
+
+    <!--FRAGMENTE DELIVERY-->
+    <!--texview-->
+    <string name="text_gerencias">Departamentos</string>
+    <string name="text_tipo_encargo">Tipo de encargo</string>
+    <string name="text_detalle_encargo">Detalle de encargo</string>
+    <string name="hinttnumero">Nº</string>
+    <!--boton-->
+    <string name="btn_encargo">Registrar Encargo</string>
+
+
+    <!--FRAGMENT INIVITADO -->
+    <!--texview-->
+    <string name="tex_gerencia_invit">GERENCIAS</string>
+    <string name="text_datos_invit">Datos Invitado</string>
+    <!--hint-->
+    <string name="hint_ingrese_dni">DNI</string>
+    <string name="hint_ingrese_nombre">Nombre</string>
+    <!--boton-->
+    <string name="registrar_ingreso">Registar Ingreso</string>
+
+
+    <!--FRAGMENT NOVEDAD -->
+    <!--texview-->
+    <string name="tex_gerencia_nov">GERENCIAS / AREA COMUN</string>
+    <string name="text_tipo_nov">TIPO DE NOVEDAD</string>
+    <string name="text_novedad">NOVEDAD</string>
+    <string name="text_prioridad_nov">PRIORIDAD</string>
+    <!--hint-->
+    <string name="radio_emergencia">EMERGENCIA</string>
+    <string name="radio_rutina">RUTINA</string>
+    <string name="radio_consigna">CONSIGNA</string>
+    <!--boton-->
+    <string name="registrar_novedad">Registar Novedad</string>
+
+
+    <!--FRAGMENT OPERARIO -->
+    <!--texview-->
+    <string name="tex_gerencia_op">GERENCIA</string>
+    <string name="text_area_comun">Area Comun</string>
+    <string name="text_datos">DATOS :</string>
+    <string name="text_selecione_ope">SELECCIONE OPERARIO:</string>
+
+    <!--hint-->
+    <string name="hint_ruc_emp_op">EMERGENCIA</string>
+    <string name="hint_rutina_op">RUTINA</string>
+    <string name="hint_ruc_op">RUC</string>
+    <string name="hint_emp_op">Empresa</string>
+    <string name="hint_trbajo_realizar">Trabajo a realizar</string>
+    <!--boton-->
+    <string name="nuevo_operario">+ Nuevo Operario</string>
+
+
+    <!--FRAGMENTO PROFECIONAL -->
+
+    <string name="text_serv_prof">SERVICIO PROFESIONAL:</string>
+
+    <!--hint-->
+    <string name="hint_ingrese_servicio">Ingrese Servicio a Realizar</string>
+    <!--boton-->
+    <string name="btn_guardar_ingreso">Registar Ingreso</string>
+
+    <!--boton-->
+
+
+    <!-- Strings related to login -->
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+    <string name="mensaje_title">Descargando ...</string>
+    <string name="mensaje_body">Descargando data del servidor ...</string>
+    <string name="mensaje_title2">Guardando ...</string>
+    <string name="mensaje_body2">Guardando configuracion del equipo ...</string>
+    <string name="response_sincronizado">Equipo configurado correctamente</string>
+    <string name="empty_door">Debe seleccionar una puerta</string>
+    <string name="error_login">Datos ingresados erroneos</string>
+    <string name="no_config">Equipo no configurado , contactese con el administrador</string>
+    <string name="mensaje_title_finalizar">Finalizando..</string>
+    <string name="mensaje_body_finalizar">Espere un momento</string>
+    <string name="mensaje_title2_finalizar">Finalizando..</string>
+    <string name="mensaje_body2_finalizar">Finalizado satisfactoriamente</string>
+    <string name="obligatorio">Dato es obligatorio</string>
+    <string name="repartidor_hint">Seleccione Repartidor</string>
+    <string name="msg_new_repartidor">Se añadio satisfactoriamente el repartidor</string>
+
+    <string name="btn_conn">Connect USB Printer</string>
+    <string name="btnSend">Print</string>
+    <string name="btn_test">Print  Test  Page</string>
+    <string name="btnClose">Close</string>
+    <string name="txt_content">&quot;&quot;</string>
+    <string name="menu_settings">set</string>
+    <string name="strLang">en</string>
+    <string name="msg_getpermission">obtaining USB device access permissions success</string>
+    <string name="msg_conn_state">USB device can not access, please re-connect</string>
+
+    <string name="button_scan">Scanea</string>
+    <string name="none_found"></string>
+    <string name="none_paired">none_paired</string>
+    <string name="scanning">scanning</string>
+    <string name="select_device">select_device</string>
+
+
+    <string name="bluetooth_available_no">Bluetooth no está disponible en el dispositivo</string>
+    <string name="bluetooth_connect_unable">Bluetooth can not connect</string>
+    <string name="bluetooth_listen">Bluetooth is awaiting action</string>
+    <string name="bluetooth_state_connecting">Bluetooth are connecting</string>
+    <string name="bluetooth_state_connected">Bluetooth tiene una conexión activa</string>
+    <string name="bluetooth_state_disconnecting">Bluetooth has an active connection</string>
+    <string name="bluetooth_state_disconnected">Bluetooth has been disconnected from an active connection</string>
+    <string name="bluetooth_open_successful">Bluetooth opened successful </string>
+    <string name="bluetooth_state_on">Bluetooth is active</string>
+    <string name="bluetooth_state_off">Bluetooth is off</string>
+    <string name="bluetooth_turning_on">Bluetooth is activated</string>
+    <string name="bluetooth_turning_off">Bluetooth is disabled</string>
+    <string name="bluetooth_device_is_used">The device bluetooht is being used</string>
+    <string name="printer_dont_select">___________don\'t select type for printer__________</string>
+    <string name="plugin_working">PLUGIN is operating</string>
+    <string name="plugin_working_result">PLUGIN result is operating</string>
+    <string name="with_the_device">with the device</string>
+    <string name="voucher_empty">Voucher no data</string>
+    <string name="successful">Successful</string>
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
+
+    <string name="on_resume">This back to APP</string>
+    <string name="on_start">BEGIN APP </string>
+    <string name="on_pause">I was paused</string>
+    <string name="on_stop">I was stopped</string>
+    <string name="on_destroy">I been closed to totally</string>
+
+
+    <!--  -->
+    <string name="name">Name</string>
+    <string name="dni">DNI</string>
+    <string name="company">Company</string>
+    <string name="entry_date">Entry D.</string>
+    <string name="firm">Firm</string>
+    <string name="holder">Holder</string>
+    <string name="personal">Personal</string>
+    <string name="user">Personal</string>
+    <string name="delivery_date">Delive.</string>
+    <string name="charge">Charge</string>
+    <string name="observations">Observations</string>
+    <string name="providers">providers S.P.</string>
+    <string name="work_be_done">Work to be done</string>
+    <string name="owner">Owner</string>
+    <string name="business_name">Busine.</string>
+    <string name="ruc">RUC</string>
+    <string name="operators">Operators</string>
+    <string name="responsible">Respons.</string>
+    <string name="companions">Companions</string>
+    <string name="doorman">Doorman</string>
+    <string name="policy">Policy</string>
+    <string name="guests">Guests.</string>
+    <string name="door">Door</string>
+    <!--  -->
+
+    <string name="delivery_voucher_title">Delivery to</string>
+    <string name="encargo_voucher_title">Order to</string>
+    <string name="profesional_voucher_title">Professionals to</string>
+    <string name="proveedor_voucher_title">Provider to</string>
+    <string name="corretaje_voucher_title">Brokerage to</string>
+    <string name="remodelacion_voucher_title">Remodeling to</string>
+    <string name="invitado_voucher_title">Guests to</string>
+
+
+    <string name="msg_encargo">LOS ENCARGOS  PUEDEN ESTAR PENDIENTE SOLO %d DIAS.</string>
+
+
+</resources>

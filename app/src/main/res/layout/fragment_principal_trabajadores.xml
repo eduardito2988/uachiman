@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Fragment_principal_trabajadores">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            style="@style/CusmerEditex"
+            android:layout_weight="1"
+            android:maxLength="8"
+            android:inputType="number"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="6dp"
+            android:padding="13dp"
+            android:hint="INGRESAR DNI"
+            android:layout_height="wrap_content"
+            android:id="@+id/bucardni" />
+
+        <Button
+            android:layout_weight="2"
+            android:text="BUSCAR"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="6dp"
+            style="@style/Estilo_boton_rojo"
+            android:layout_width="match_parent"
+            android:id="@+id/btnbuscardni" />
+
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/con_contenido"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+      <RelativeLayout
+
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:id="@+id/img_trabjador"
+              android:src="@drawable/sin_foto"
+              android:layout_width="100dp"
+              android:layout_margin="10dp"
+              android:layout_height="100dp" />
+
+
+          <TextView
+              android:id="@+id/texto_Apellidos_tra"
+              android:text="ROSALES CARLOS"
+              android:layout_marginTop="10dp"
+              android:layout_toRightOf="@+id/img_trabjador"
+              android:layout_width="match_parent"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:layout_height="wrap_content"
+              />
+
+            <TextView
+                android:id="@+id/txt_nombre_tra"
+                android:text="EDUARDO FREDY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/texto_Apellidos_tra"
+                android:layout_toRightOf="@+id/img_trabjador"
+                android:layout_toEndOf="@+id/img_trabjador" />
+
+          <TextView
+          android:text="INGRESO DIA"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+              android:textColor="@color/color_boton"
+          android:layout_below="@+id/txt_nombre_tra"
+          android:layout_toRightOf="@+id/img_trabjador"
+          android:layout_toEndOf="@+id/img_trabjador"
+              android:id="@+id/textView4" />
+
+          <TextView
+              android:text="VIERNES"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/color_boton"
+              android:layout_alignTop="@+id/textView4"
+              android:layout_toRightOf="@+id/textView4"
+              android:layout_toEndOf="@+id/textView4"
+              android:layout_marginLeft="6dp"
+              android:layout_marginStart="6dp"
+              android:id="@+id/dia_tra" />
+
+
+
+
+          <TextView
+              android:text="INGRESO: "
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView7"
+              android:textSize="11dp"
+              android:textStyle="bold"
+              android:layout_above="@+id/salida_tra"
+              android:layout_alignLeft="@+id/textView4"
+              android:layout_alignStart="@+id/textView4" />
+
+
+          <TextView
+              android:text="00:00:00"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/ingreso_tra"
+              android:textSize="11dp"
+              android:layout_marginLeft="15dp"
+              android:layout_toRightOf="@+id/textView7"
+              android:layout_above="@+id/salida_tra"
+              android:layout_centerHorizontal="true" />
+
+          <TextView
+              android:text="SALIDA:"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView6"
+              android:textSize="11dp"
+              android:textStyle="bold"
+              android:layout_alignBottom="@+id/img_trabjador"
+              android:layout_toRightOf="@+id/img_trabjador"
+              android:layout_alignRight="@+id/textView7"
+              android:layout_alignEnd="@+id/textView7" />
+
+          <TextView
+              android:text="00:00:00"
+              android:layout_width="wrap_content"
+              android:layout_toRightOf="@+id/textView6"
+              android:layout_height="wrap_content"
+              android:id="@+id/salida_tra"
+              android:textSize="11dp"
+              android:layout_alignBottom="@+id/img_trabjador"
+              android:layout_alignLeft="@+id/ingreso_tra"
+              android:layout_alignStart="@+id/ingreso_tra" />
+
+
+           <ImageView
+               android:id="@+id/chek_estado"
+               android:src="@drawable/checked_verde"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBottom="@+id/salida_tra"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginRight="21dp"
+               android:layout_marginEnd="21dp" />
+
+
+        </RelativeLayout>
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+
+    android:layout_height="wrap_content">
+
+ <!--   <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycle_trabajador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+   <!-- </android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+</android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+</LinearLayout>

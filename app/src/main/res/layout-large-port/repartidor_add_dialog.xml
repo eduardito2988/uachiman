@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/dni_repartidor"
+            style="@style/CusmerEditexborder"
+            android:layout_margin="10dp"
+            android:hint="@string/ingrese_dni"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/repartidor"
+            style="@style/CusmerEditexborder"
+            android:layout_margin="10dp"
+            android:hint="@string/ingrese_nombre_apellido" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_registrar_repartidor"
+            style="@style/Estilo_boton_rojo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="@string/registrar_repartidor"
+            android:textColor="@color/blanco" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

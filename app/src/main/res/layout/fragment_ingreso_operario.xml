@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/fondo_fragment"
+    tools:context="com.delhel.dorman.uachiman.Fragmentos.Ingreso_operario">
+
+
+        <TextView
+            android:id="@+id/txz"
+            android:text="@string/tex_requiere_dni"
+            android:layout_width="match_parent"
+            android:textColor="@color/morado"
+            android:padding="5dp"
+            android:textSize="11dp"
+            android:layout_height="wrap_content" />
+
+
+            
+
+            <RadioGroup
+                android:paddingLeft="10dp"
+                android:padding="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ss">
+
+                <RadioButton
+                    android:id="@+id/radiogerencia"
+                    android:text="@string/text_gerencias"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/radioareacomun"
+                    android:text="@string/text_area_comun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/tipo_"
+            android:text="AREA COMUN :"
+            android:inputType="number"
+            android:padding="2dp"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/lineaGris_Oscuro"
+            android:layout_height="wrap_content" />
+
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/spinner3"
+                style="@style/spinner_style"
+                android:layout_gravity="left|top"
+                />
+
+
+            <TextView
+                android:text="DATOS :"
+                android:padding="2dp"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/lineaGris_Oscuro"
+                android:layout_height="wrap_content" />
+
+
+
+                <EditText
+                    android:hint="@string/hint_ingrese_ruc"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:maxLength="11"
+                     style="@style/CusmerEditexborder"
+                    />
+
+                <EditText
+                    android:hint="@string/hint_emp_op"
+                    android:layout_marginTop="5dp"
+                    style="@style/CusmerEditexborder" />
+
+                <EditText
+                    android:hint="@string/hint_trbajo_realizar"
+                    android:layout_marginTop="5dp"
+                    style="@style/CusmerEditexborder" />
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tipo_opera"
+                    android:text="@string/text_selecione_ope"
+                    android:padding="8dp"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/lineaGris_Oscuro"
+                    android:layout_height="match_parent" />
+
+                <View style="@style/Divider"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner4"
+                    android:layout_gravity="left|top"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/guardar"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                style="@style/Estilo_boton_rojo" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="@string/nuevo_operario"
+                style="@style/Estilo_boton_rojo"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+

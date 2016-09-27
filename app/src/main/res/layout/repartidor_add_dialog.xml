@@ -1,0 +1,56 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <EditText
+         android:id="@+id/usuario_relevo"
+             android:hint="@string/ingrese_dni"
+             android:layout_margin="10dp"
+        style="@style/CusmerEditexborder" />
+
+         <EditText
+             android:id="@+id/pass_relevo"
+             android:layout_margin="10dp"
+             android:hint="@string/ingrese_nombre_apellido"
+             style="@style/CusmerEditexborder" />
+
+
+        <TextView
+
+            android:id="@+id/text_mensaje"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/rojo_claro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_relevo"
+            android:text="@string/registrar_repartidor"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            style="@style/Estilo_boton_rojo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
