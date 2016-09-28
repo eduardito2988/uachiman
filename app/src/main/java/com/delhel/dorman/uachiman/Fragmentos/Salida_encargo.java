@@ -175,7 +175,8 @@ public class Salida_encargo extends Fragment {
 
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams requestParams = new RequestParams();
-        requestParams.add("entidad", String.valueOf(2));
+        //requestParams.add("entidad", String.valueOf(2));
+        requestParams.add("entidad", String.valueOf(60));
 
         RequestHandle post = client.post(Constantes.URL_ENCARGO, requestParams, new AsyncHttpResponseHandler() {
             @Override
