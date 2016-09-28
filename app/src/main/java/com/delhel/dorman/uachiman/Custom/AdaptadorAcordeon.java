@@ -142,7 +142,8 @@ public class AdaptadorAcordeon extends BaseExpandableListAdapter {
         TextView lblcantidad = (TextView) convertView.findViewById(R.id.cantidades);
 
         lblListHeader.setTypeface(null, Typeface.BOLD);
-        lblListHeader.setText(headerEncargo.getUni_numi_vc20() + " | " + capitalizar.ucWords(headerEncargo.getUsuario()));
+        //lblListHeader.setText(headerEncargo.getUni_numi_vc20() + " | " + capitalizar.ucWords(headerEncargo.getUsuario()));
+        lblListHeader.setText(headerEncargo.getUni_numi_vc20() + " | " +headerEncargo.getUsuario());
         lblcantidad.setText(String.valueOf(headerEncargo.getCantidad()));
 
         return convertView;

@@ -49,6 +49,7 @@ public class Salida_encargo extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String TAG = "Salida_encargo";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -233,10 +234,11 @@ public class Salida_encargo extends Fragment {
         });
     }
 
-    public void refrescarq() {
+    public void refresh() {
 
-        Log.e("mensaje", "-->eso!");
+        Log.v(TAG, "-->eso!");
         //Toast.makeText(getActivity(), "estoy aqui!", Toast.LENGTH_SHORT).show();
+        prepareListData();
     }
 
 }

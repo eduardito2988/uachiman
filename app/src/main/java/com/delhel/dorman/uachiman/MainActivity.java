@@ -4,6 +4,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +18,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.delhel.dorman.uachiman.Fragmentos.Fragment_principal;
+import com.delhel.dorman.uachiman.Fragmentos.Fragment_principal_encargo;
 import com.delhel.dorman.uachiman.Fragmentos.Salida_Invitado;
 import com.delhel.dorman.uachiman.Fragmentos.Salida_encargo;
 import com.delhel.dorman.uachiman.Fragmentos.Salida_operario;
@@ -25,10 +27,13 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener , Comunicacion{
 
 
+    private static final String TAG = "MainActivity";
     Class Framentclass = null;
     Fragment fragment = null;
     FragmentManager fragmentManager;
@@ -253,8 +258,33 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void refrescar() {
 
-        bTabFragment= Salida_encargo.newInstance(null,null);
-        bTabFragment.refrescarq();
+        //bTabFragment= Salida_encargo.newInstance(null,null);
+        //bTabFragment.refrescarq();
+        Fragment fragment= getEncargoMainFragment();
+        if(fragment!=null){
+            Fragment_principal_encargo fragment_principal_encargo =(Fragment_principal_encargo)(fragment);
+            Log.v(TAG, " fragment_principal_encargo "+fragment_principal_encargo);
+            fragment_principal_encargo.updateSalida();
+        }
 
+    }
+
+    private Fragment getEncargoMainFragment()
+    {
+        FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        if(fragments != null){
+            for(Fragment fragment : fragments){
+                if(fragment != null && fragment.isVisible())
+                {
+                    if(fragment instanceof Fragment_principal_encargo){
+                        return  fragment;
+                    }
+                }
+
+            }
+        }
+
+        return null;
     }
 }

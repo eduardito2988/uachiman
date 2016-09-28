@@ -1,6 +1,7 @@
 package com.delhel.dorman.uachiman.Fragmentos;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -22,29 +23,40 @@ import com.delhel.dorman.uachiman.R;
  */
 public class Fragment_principal_encargo extends Fragment{
 
-    View rootview;
-
+    private MiFragmentPagerAdapter miFragmentPagerAdapter;
+    private Ingreso_encargo1 ingreso_encargo1;
+    private Salida_encargo salida_encargo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootview = inflater.inflate(R.layout.fragment_fragment_principal_encargo, container, false);
-
+        View rootview = inflater.inflate(R.layout.fragment_fragment_principal_encargo, container, false);
         getActivity().setTitle("ENCARGOS");// TITULO FRAGMENT
+        return rootview;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         String[] titulos = {"REGISTRO DE ENCARGO", "ENTREGA DE ENCARGO"};
-        Fragment[] fragment = {new Ingreso_encargo1(), new Salida_encargo()};
+        ingreso_encargo1= new Ingreso_encargo1();
+        salida_encargo= new Salida_encargo();
+        Fragment[] fragment = {ingreso_encargo1, salida_encargo};
 
-        final ViewPager viewPager = (ViewPager) rootview.findViewById(R.id.viewpagertabencargo);
-        viewPager.setAdapter(new MiFragmentPagerAdapter(getChildFragmentManager(), titulos, fragment)); //pasar datos a adaptador
-        TabLayout tabLayout = (TabLayout) rootview.findViewById(R.id.appbartabsencargo);
+        final ViewPager viewPager = (ViewPager) getView().findViewById(R.id.viewpagertabencargo);
+        miFragmentPagerAdapter= new MiFragmentPagerAdapter(getChildFragmentManager(), titulos, fragment);
+        viewPager.setAdapter(miFragmentPagerAdapter); //pasar datos a adaptador
+        TabLayout tabLayout = (TabLayout) getView().findViewById(R.id.appbartabsencargo);
         tabLayout.setTabMode(TabLayout.MODE_FIXED);// tipo de tab
         tabLayout.setupWithViewPager(viewPager);
+    }
 
-
-
-        return rootview;
+    public void updateSalida(){
+        if(salida_encargo!=null){
+            salida_encargo.refresh();
+        }
     }
 
 }

@@ -284,7 +284,6 @@ public class Ingreso_encargo1 extends Fragment implements RecyclerViewOnClickLis
 
     @Override
     public void onClickListener() {
-
         mListener.refrescar();
 
     }
